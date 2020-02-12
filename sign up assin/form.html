@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        
+        <title>Add Edit Remove HTML Table Row</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            
+            .container{overflow: hidden}
+            .tab{float: left;}
+            .tab-2{margin-left: 50px}
+            .tab-2 input{display: block;margin-bottom: 10px}
+            tr{transition:all .25s ease-in-out}
+            tr:hover{background-color:#EEE;cursor: pointer}
+            
+        </style>
+        
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="tab tab-1">
+                <table id="table" border="1">
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        
+                        <th>age</th>
+                         <th>dob</th>
+                       <th>email</th>
+                       <th>contry</th>
+                       <th>state</th>
+                       <th>city</th>
+                       <th>gender</th>
+                       <th>hobbies</th>
+                       <th>education</th>
+                          <!--  <th>phone</th>   
+                             
+                        <th>state</th>
+                        <th>gender</th>
+                       
+                    -->
+                    </tr>
+                    <tr>
+                        <td>A1</td>
+                        <td>B1</td>
+                        <td>10</td>
+                        <td>12/10/2020</td>
+                        <td>gurubhai@gmal.com</td>
+                        <th>ind</th>
+                        <th>del</th>
+                        <th>noida</th>
+                        <th>male</th>
+                        <th>writing</th>
+                        <th>writing</th>
+                        <!-- <td>A1</td>
+                        
+                        <td>10</td>
+                        <td>A1</td>
+                        <td>B1</td>
+                        <td>10</td>
+                        <td>10</td> -->
+                    </tr>
+                    
+                </table>
+            </div>
+            <form>
+            <div class="tab tab-2">
+                First Name :<input type="text" name="fname" id="fname">
+                Last Name :<input type="text" name="lname" id="lname">
+                age :<input type="number" name="age" id="age">
+               dob:<input type="date" name="dob" id="dob">
+               email :<input type="email" name="email" id="email">
+
+                 <form name="myform" id="myForm">
+                    Select Country: <select name="state" id="countySel" size="1">
+                    <option value="" selected="selected">Select Country</option>
+                    </select>
+                    <br>
+                    <br>
+                   
+               Select State: <select name="countrya" id="stateSel" size="1">
+                    <option value="" selected="selected">Please select Country first</option>
+                    </select>
+                    <br>
+                    <br>
+                    Select District: <select name="district" id="districtSel" size="1">
+                    <option value="" selected="selected">Please select State first</option>
+                    </select><br> 
+             
+                    </form><closeform></closeform>
+
+
+ 
+                  
+                    Your Gender: <input id="gender" type="radio" name="gender" value="Male"> Male
+                    <input id="gender" type="radio" name="gender" value="Female"> Female
+
+
+
+
+                <h3>Select your hobbies</h3>
+<input type="checkbox" id="hobbies" name="hobbies" value="Gardening" />
+Gardening
+<input type="checkbox" id="hobbies" name="hobbies" value="Playing Game" />
+Playing Game
+<input type="checkbox" id="hobbies" name="hobbies" value="Reading Book" />
+Reading Book</p>
+
+<br>
+<br>
+
+<br>
+<h3>Select your edjucation</h3>
+<select id="education">
+    <option value="bca">bca</option>
+    <option value="mca">mca</option>
+    <option value="b.tech">b.tech</option>
+</select>
+  
+
+               
+<input type="reset" value="Reset">
+                <button onclick="addHtmlTableRow();">Add</button>
+                <button onclick="editHtmlTbleSelectedRow();">Edit</button>
+                <button onclick="removeSelectedRow();">Remove</button>
+            </div>
+        </div>
+    </form>
+        <script src="script.js">
+        </script>
+       
+        
+    </body>
+</html>
